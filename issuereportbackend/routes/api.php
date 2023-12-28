@@ -7,6 +7,7 @@ use App\Http\Controllers\IssuesolveController;
 use App\Http\Controllers\ShowdetailsissueController;
 use App\Http\Controllers\CommentsController;
 use App\Http\Controllers\IssuerecordController;
+use App\Http\Controllers\NewtestController;
 
 
 
@@ -37,4 +38,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
  Route::Post('issuerecords', [IssuerecordController::class, 'store']);
  Route::get('shows', [IssuerecordController::class, 'show']);
 
-
+//test api route
+Route::Post('tests', [NewtestController::class, 'newtest']);
+Route::get('displays', [NewtestController::class, 'display']);

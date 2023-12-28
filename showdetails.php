@@ -7,6 +7,8 @@
     <!-- Add fetch polyfill -->
     <link rel="stylesheet" href="stylesr.css">
     <script src="https://unpkg.com/unfetch/dist/unfetch.umd.js"></script>
+    
+    
 </head>
 <body>
     <h1> Isssue Details</h1>

@@ -14,7 +14,6 @@ try {
     $issuereport = new Issuereportform;
     $issuereport->issuetitle=$request->issuetitle;
     $issuereport->description=$request->description;
-    //$issuereport->priority=$request->priority;
     $issuereport->reportedname=$request->reportedname;
     $issuereport->email=$request->email;
 

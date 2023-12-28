@@ -22,7 +22,7 @@ class IssuerecordController extends Controller
         $attachedFiles = [];
         if ($request->hasFile('attached_files')) {
             foreach ($request->file('attached_files') as $file) {
-                $path = $file->store('attachments', 'public');
+                $path = $file->store('images', 'public');
                 // Get the file name from the path
         $filename = pathinfo($path, PATHINFO_FILENAME);
         
@@ -30,7 +30,7 @@ class IssuerecordController extends Controller
         $extension = $file->extension();
         
         // Build the URL for the file
-        $url = asset("storage/attachments/{$filename}.{$extension}");
+        $url = asset("storage/images/{$filename}.{$extension}");
                 $attachedFiles[] = $url;
             }
         }

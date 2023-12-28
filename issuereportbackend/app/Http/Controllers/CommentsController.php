@@ -41,7 +41,7 @@ class CommentsController extends Controller
              }
             }
         
-            public function show_comments()
+           public function show_comments()
 {
     try {
         $comment = Comment::all();
